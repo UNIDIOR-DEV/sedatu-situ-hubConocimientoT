@@ -1,0 +1,15 @@
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*~
+
+# Archivos temporales de imagen
+*.tmp
+*.bak
