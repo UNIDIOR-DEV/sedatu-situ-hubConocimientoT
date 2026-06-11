@@ -92,39 +92,6 @@ El array `noticias` debe contener **un máximo de 10 entradas**. Si suben más, 
 3. Actualiza el campo `actualizado`
 4. Commit en un branch y PR como arriba
 
----
-
-## Reglas para las imágenes
-
-| Regla              | Valor                                            |
-|--------------------|--------------------------------------------------|
-| Formato            | **WebP** (preferido) o JPG                       |
-| Tamaño de archivo  | **≤ 200 KB**                                     |
-| Resolución máxima  | **1200 × 800 px**                                |
-| Relación de aspecto| 3:2 recomendada (consistencia visual)           |
-| Nombre del archivo | minúsculas, guiones, sin acentos. Ej: `foro-territorial.webp` |
-| Derechos de uso    | Propias de SEDATU o con licencia para uso público |
-
-Herramientas sugeridas para optimizar:
-
-- **Convertir a WebP:** https://squoosh.app (desde el navegador, sin instalar nada)
-- **Reducir peso:** https://tinypng.com
-
----
-
-## Validación rápida del JSON
-
-Antes de hacer commit:
-
-1. Copia el contenido de `noticias.json`
-2. Pégalo en https://jsonlint.com
-3. Si dice **"Valid JSON"**, está listo
-
-Errores comunes:
-
-- Comas de más al final de un array u objeto (`,]` o `,}`)
-- Comillas tipográficas curvas en vez de rectas (`"` no `"` ni `"`)
-- Falta de comillas en valores de texto
 
 ---
 
