@@ -4,27 +4,27 @@
   "noticias": [
     {
       "id": "2026-06-10-bienvenida-noticias",
-      "titulo": "Nuevo apartado de Noticias en el SITU",
-      "descripcion": "A partir de hoy, el SITU cuenta con un espacio dedicado a comunicar novedades, actualizaciones de la plataforma y eventos relevantes para usuarios del sistema.",
-      "imagen": "imagenes/1.jpg",
+      "titulo": "Hacia una nueva experiencia",
+      "descripcion": "",
+      "imagen": "imagenes/1.jpeg",
       "fecha": "2026-06-10",
       "link": ""
     },
     {
       "id": "2026-06-01-actualizacion-indicadores",
-      "titulo": "Actualización de indicadores territoriales",
-      "descripcion": "Se publicaron los indicadores actualizados de ordenamiento territorial correspondientes al primer semestre. Revísalos directamente desde la plataforma.",
-      "imagen": "imagenes/2.jpg",
+      "titulo": "Capas temáticas y productos geoespaciales de movilidad y riesgos",
+      "descripcion": "",
+      "imagen": "imagenes/2.jpeg",
       "fecha": "2026-06-01",
-      "link": "https://sistemas.sedatu.gob.mx/situ"
+      "link": ""
     },
     {
       "id": "2026-05-15-capacitacion-municipios",
-      "titulo": "Capacitación para municipios",
-      "descripcion": "SEDATU ofrece una capacitación gratuita para enlaces municipales sobre el uso del SITU. Inscríbete a través del enlace adjunto.",
+      "titulo": "IN-SITU: El escenario de las mejores propuestas",
+      "descripcion": "",
       "imagen": "imagenes/3.jpg",
       "fecha": "2026-05-15",
-      "link": "https://www.gob.mx/sedatu"
+      "link": ""
     }
   ]
 }
