@@ -3,6 +3,22 @@
   "actualizado": "2026-06-10",
   "noticias": [
     {
+      "id": "2026-06-22-huellas-edificaciones",
+      "titulo": "Movilidad: generación de informaciión sobre movilidad en municiipios de Mérida",
+      "descripcion": "Difundir y analizar los Planes Integrales y Municipales de Movilidad Urbana Sustentables (PIMUS/PMUS) desarrollados para municipios del estado de Yucatán, así como destacar la aplicación de los Sistemas de Información Geográfica (SIG) como herramientas estratégicas para el diagnóstico, la planeación y la toma de decisiones orientadas a promover una movilidad urbana sustentable.",
+      "imagen": "imagenes/planes-integrales.jpg",
+      "fecha": "2026-05-15",
+      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/uR6bYNsnS1iFsDRQB0kc_A"
+    },
+    {
+      "id": "2026-06-22-huellas-edificaciones",
+      "titulo": "Huellas de edificaciones a nivel nacional: Open Building y Global Building Atlas",
+      "descripcion": "Analizar el potencial de OpenBuildings y Global Building Atlas LoD1 como fuentes de información geoespacial para la representación plana y tridimensional de edificaciones a escala nacional, con el propósito de fortalecer la generación de diagnósticos territoriales, la planeación urbana y el desarrollo de proyectos basados en evidencia.",
+      "imagen": "imagenes/huellas-edificaciones.jpg",
+      "fecha": "2026-05-15",
+      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/cNbNMjxARQ-xYr-J8nMEsA"
+    },
+    {
       "id": "2026-06-10-bienvenida-noticias",
       "titulo": "Hacia una nueva experiencia",
       "descripcion": "Presentar el proyecto sobre un nueva experiencia del SITU como plataforma contextual —el mapa como interfaz y el territorio como punto de partida— y recabar la retroalimentación sobre lo qué funciona y las propuestas de mejora que permitan avanzar hacia un geoportal Completo, Interoperable, de Máxima usabilidad y Accesible (CIMA).",
@@ -27,12 +43,12 @@
       "link": "https://sistemas.sedatu.gob.mx/repositorio/s/loIOELiESVmvFbfqpwCtqA"
     },
     {
-      "id": "2026-06-22-capacitacion-municipios",
-      "titulo": "Huellas de edificaciones a nivel nacional: Open Building y Global Building Atlas",
-      "descripcion": "Analizar el potencial de OpenBuildings y Global Building Atlas LoD1 como fuentes de información geoespacial para la representación plana y tridimensional de edificaciones a escala nacional, con el propósito de fortalecer la generación de diagnósticos territoriales, la planeación urbana y el desarrollo de proyectos basados en evidencia.",
-      "imagen": "imagenes/huellas-edificaciones.jpg",
-      "fecha": "2026-05-15",
-      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/cNbNMjxARQ-xYr-J8nMEsA"
+      "id": "2026-06-30-desarrollo-herramientas-tec",
+      "titulo": "Flujos de Movilidad Nacional",
+      "descripcion": "Presentar la metodología de Mobile Data Analytics (MDA) utilizada para generar flujos de movilidad origen–destino, información integrada al SITU para apoyar la planeación y el análisis territorial.",
+      "imagen": "imagenes/representacion-municipal.jpg",
+      "fecha": "2026-06-30",
+      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/w06_MrjHQzudwQuxCNY7Xw"
     },
     {
       "id": "2026-07-16-desarrollo-herramientas-tec",
@@ -43,12 +59,12 @@
       "link": "https://sistemas.sedatu.gob.mx/repositorio/s/lPXTsRxcTN6nykdddV3MnQ"
     },
     {
-      "id": "2026-06-30-desarrollo-herramientas-tec",
-      "titulo": "Flujos de Movilidad Nacional",
-      "descripcion": "Presentar la metodología de Mobile Data Analytics (MDA) utilizada para generar flujos de movilidad origen–destino, información integrada al SITU para apoyar la planeación y el análisis territorial.",
+      "id": "2026-07-23-desarrollo-herramientas-tec",
+      "titulo": "El termómetro de las finanzas municipales",
+      "descripcion": "Presentar la evaluación y comparación en la capacidad de recaudación de los municipios de México mediante un índice compuesto que permita identificar fortalezas, rezagos y áreas de oportunidad para robustecer las haciendas municipales.",
       "imagen": "imagenes/representacion-municipal.jpg",
-      "fecha": "2026-06-30",
-      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/w06_MrjHQzudwQuxCNY7Xw"
+      "fecha": "2026-07-23",
+      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/G-5csTfwTiGSOzXdgFmYBA"
     }
   ]
 }
