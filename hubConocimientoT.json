@@ -41,6 +41,14 @@
       "imagen": "imagenes/desarrollo-herramientas-tec.jpg",
       "fecha": "2026-07-16",
       "link": "https://sistemas.sedatu.gob.mx/repositorio/s/lPXTsRxcTN6nykdddV3MnQ"
+    },
+    {
+      "id": "2026-06-30-desarrollo-herramientas-tec",
+      "titulo": "Flujos de Movilidad Nacional",
+      "descripcion": "Presentar la metodología de Mobile Data Analytics (MDA) utilizada para generar flujos de movilidad origen–destino, información integrada al SITU para apoyar la planeación y el análisis territorial.",
+      "imagen": "imagenes/representacion-municipal.jpg",
+      "fecha": "2026-06-30",
+      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/w06_MrjHQzudwQuxCNY7Xw"
     }
   ]
 }
