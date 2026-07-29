@@ -33,6 +33,14 @@
       "imagen": "imagenes/huellas-edificaciones.jpg",
       "fecha": "2026-05-15",
       "link": "https://sistemas.sedatu.gob.mx/repositorio/s/cNbNMjxARQ-xYr-J8nMEsA"
+    },
+    {
+      "id": "2026-07-16-desarrollo-herramientas-tec",
+      "titulo": "Empaquetador: Visor con mallas geoestadísticas",
+      "descripcion": "Presentar el contexto y las funcionalidades de la herramienta del empaquetador disponible en la plataforma del SITU.",
+      "imagen": "imagenes/desarrollo-herramientas-tec.jpg",
+      "fecha": "2026-07-16",
+      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/lPXTsRxcTN6nykdddV3MnQ"
     }
   ]
 }
