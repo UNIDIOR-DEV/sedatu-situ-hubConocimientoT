@@ -3,12 +3,12 @@
   "actualizado": "2026-06-10",
   "noticias": [
     {
-      "id": "2026-06-22-huellas-edificaciones",
+      "id": "2026-06-22-movilidad",
       "titulo": "Movilidad: generación de informaciión sobre movilidad en municiipios de Mérida",
       "descripcion": "Difundir y analizar los Planes Integrales y Municipales de Movilidad Urbana Sustentables (PIMUS/PMUS) desarrollados para municipios del estado de Yucatán, así como destacar la aplicación de los Sistemas de Información Geográfica (SIG) como herramientas estratégicas para el diagnóstico, la planeación y la toma de decisiones orientadas a promover una movilidad urbana sustentable.",
       "imagen": "imagenes/planes-integrales.jpg",
       "fecha": "2026-05-15",
-      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/iGDd0li6R_Kks1pSoZ92iQ"
+      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/uR6bYNsnS1iFsDRQB0kc_A"
     },
     {
       "id": "2026-06-22-huellas-edificaciones",
@@ -16,7 +16,7 @@
       "descripcion": "Analizar el potencial de OpenBuildings y Global Building Atlas LoD1 como fuentes de información geoespacial para la representación plana y tridimensional de edificaciones a escala nacional, con el propósito de fortalecer la generación de diagnósticos territoriales, la planeación urbana y el desarrollo de proyectos basados en evidencia.",
       "imagen": "imagenes/huellas-edificaciones.jpg",
       "fecha": "2026-05-15",
-      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/cNbNMjxARQ-xYr-J8nMEsA"
+      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/iGDd0li6R_Kks1pSoZ92iQ"
     },
     {
       "id": "2026-06-10-bienvenida-noticias",
