@@ -65,6 +65,30 @@
       "imagen": "imagenes/finanzas-municipales.jpg",
       "fecha": "2026-07-23",
       "link": "https://sistemas.sedatu.gob.mx/repositorio/s/G-5csTfwTiGSOzXdgFmYBA"
+    },
+    {
+      "id": "2026-07-30-teledeteccion",
+      "titulo": "Teledetección, imágenes satelitales Landsat 7 y 8",
+      "descripcion": "Presentar las principales características, usos y aplicaciones de las imágenes satelitales, destacando su utilidad para el análisis territorial, urbano, ambiental y de gestión de riesgos, así como su aprovechamiento en procesos de planeación y el fortalecimiento del uso de información geoespacial en el SITU.",
+      "imagen": "imagenes/teledeteccion.jpg",
+      "fecha": "2026-07-30",
+      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/Rv3ez6GATWG5J-YgGBitEA"
+    },
+    {
+      "id": "2026-08-13-movilidad-cuidados",
+      "titulo": "Movilidad de Cuidados y Pobreza de tiempo",
+      "descripcion": "Difundir los resultados del proyecto de producción de información sobre pobreza de tiempo con enfoque de género y su relación con la movilidad del cuidado, así como abordar los contenidos de la Guía Manahuia en relación con los usos del tiempo destinados a actividades de cuidado y su incidencia en la pobreza de tiempo.",
+      "imagen": "imagenes/movilidad-cuidados.jpg",
+      "fecha": "2026-08-13",
+      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/NL4JWfq7Q-W344qVczGhMA"
+    },
+    {
+      "id": "2026-08-20-valuacion-masiva",
+      "titulo": "Valuación masiva con recursos del SITU",
+      "descripcion": "Conocer la importancia de la valuación inmobiliariamás  allá  de  los  fines  comerciales,  como  una  herramienta  fundamental  para  la  planeaciónterritorial, la gestión integral de riesgos y la construcción de ciudades más resilientes.",
+      "imagen": "imagenes/valuacion-masiva.jpg",
+      "fecha": "2026-08-20",
+      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/dTiRJL5vT8-oB8MDoVTs7A"
     }
   ]
 }
