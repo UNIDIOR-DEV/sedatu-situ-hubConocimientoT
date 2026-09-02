@@ -3,78 +3,6 @@
   "actualizado": "2026-06-10",
   "noticias": [
     {
-      "id": "2026-06-22-movilidad",
-      "titulo": "Movilidad: generación de información sobre movilidad en municipios de Mérida",
-      "descripcion": "Difundir y analizar los Planes Integrales y Municipales de Movilidad Urbana Sustentables (PIMUS/PMUS) desarrollados para municipios del estado de Yucatán, así como destacar la aplicación de los Sistemas de Información Geográfica (SIG) como herramientas estratégicas para el diagnóstico, la planeación y la toma de decisiones orientadas a promover una movilidad urbana sustentable.",
-      "imagen": "imagenes/planes-integrales.jpg",
-      "fecha": "2026-05-15",
-      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/uR6bYNsnS1iFsDRQB0kc_A"
-    },
-    {
-      "id": "2026-06-22-huellas-edificaciones",
-      "titulo": "Huellas de edificaciones a nivel nacional: Open Building y Global Building Atlas",
-      "descripcion": "Analizar el potencial de OpenBuildings y Global Building Atlas LoD1 como fuentes de información geoespacial para la representación plana y tridimensional de edificaciones a escala nacional, con el propósito de fortalecer la generación de diagnósticos territoriales, la planeación urbana y el desarrollo de proyectos basados en evidencia.",
-      "imagen": "imagenes/huellas-edificaciones.jpg",
-      "fecha": "2026-05-15",
-      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/iGDd0li6R_Kks1pSoZ92iQ"
-    },
-    {
-      "id": "2026-06-10-bienvenida-noticias",
-      "titulo": "Hacia una nueva experiencia",
-      "descripcion": "Presentar el proyecto sobre un nueva experiencia del SITU como plataforma contextual —el mapa como interfaz y el territorio como punto de partida— y recabar la retroalimentación sobre lo qué funciona y las propuestas de mejora que permitan avanzar hacia un geoportal Completo, Interoperable, de Máxima usabilidad y Accesible (CIMA).",
-      "imagen": "imagenes/1.jpeg",
-      "fecha": "2026-06-10",
-      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/dxfSRoC1TpihGegU3vXTqQ"
-    },
-    {
-      "id": "2026-06-01-actualizacion-indicadores",
-      "titulo": "Capas temáticas y productos geoespaciales de movilidad y riesgos",
-      "descripcion": "Presentar y promover el uso la información geoespacial relacionada con temáticas de movilidad y riesgos, disponible en el Sistema de Información Territorial y Urbano.",
-      "imagen": "imagenes/2.jpeg",
-      "fecha": "2026-06-01",
-      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/KSGFTZpCS2er0Ku96hieuQ"
-    },
-    {
-      "id": "2026-05-15-capacitacion-municipios",
-      "titulo": "IN-SITU: El escenario de las mejores propuestas",
-      "descripcion": "Difundir y reconocer las propuestas ganadoras de la iniciativa IN SITU MX la cual se promovió para incentivar el uso de la información del SITU y detonar la participación del sector público, ciudadanía y especialistas ante problemáticas relacionadas con la gestión integral de riesgos y la movilidad de cuidados, mediante el uso de información geoespacial. ",
-      "imagen": "imagenes/3.jpeg",
-      "fecha": "2026-05-15",
-      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/loIOELiESVmvFbfqpwCtqA"
-    },
-    {
-      "id": "2026-06-30-desarrollo-herramientas-tec",
-      "titulo": "Flujos de Movilidad Nacional",
-      "descripcion": "Presentar la metodología de Mobile Data Analytics (MDA) utilizada para generar flujos de movilidad origen–destino, información integrada al SITU para apoyar la planeación y el análisis territorial.",
-      "imagen": "imagenes/representacion-municipal.jpg",
-      "fecha": "2026-06-30",
-      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/w06_MrjHQzudwQuxCNY7Xw"
-    },
-    {
-      "id": "2026-07-16-desarrollo-herramientas-tec",
-      "titulo": "Empaquetador: Visor con mallas geoestadísticas",
-      "descripcion": "Presentar el contexto y las funcionalidades de la herramienta del empaquetador disponible en la plataforma del SITU.",
-      "imagen": "imagenes/desarrollo-herramientas-tec.jpg",
-      "fecha": "2026-07-16",
-      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/lPXTsRxcTN6nykdddV3MnQ"
-    },
-    {
-      "id": "2026-07-23-desarrollo-herramientas-tec",
-      "titulo": "El termómetro de las finanzas municipales",
-      "descripcion": "Presentar la evaluación y comparación en la capacidad de recaudación de los municipios de México mediante un índice compuesto que permita identificar fortalezas, rezagos y áreas de oportunidad para robustecer las haciendas municipales.",
-      "imagen": "imagenes/finanzas-municipales.jpg",
-      "fecha": "2026-07-23",
-      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/G-5csTfwTiGSOzXdgFmYBA"
-    },
-    {
-      "id": "2026-07-30-teledeteccion",
-      "titulo": "Teledetección, imágenes satelitales Landsat 7 y 8",
-      "descripcion": "Presentar las principales características, usos y aplicaciones de las imágenes satelitales, destacando su utilidad para el análisis territorial, urbano, ambiental y de gestión de riesgos, así como su aprovechamiento en procesos de planeación y el fortalecimiento del uso de información geoespacial en el SITU.",
-      "imagen": "imagenes/teledeteccion.jpg",
-      "fecha": "2026-07-30",
-      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/Rv3ez6GATWG5J-YgGBitEA"
-    },
-    {
       "id": "2026-08-13-movilidad-cuidados",
       "titulo": "Movilidad de Cuidados y Pobreza de tiempo",
       "descripcion": "Difundir los resultados del proyecto de producción de información sobre pobreza de tiempo con enfoque de género y su relación con la movilidad del cuidado, así como abordar los contenidos de la Guía Manahuia en relación con los usos del tiempo destinados a actividades de cuidado y su incidencia en la pobreza de tiempo.",
@@ -89,6 +17,14 @@
       "imagen": "imagenes/valuacion-masiva.jpg",
       "fecha": "2026-08-20",
       "link": "https://sistemas.sedatu.gob.mx/repositorio/s/dTiRJL5vT8-oB8MDoVTs7A"
+    },
+    {
+      "id": "2026-08-20-valuacion-masiva",
+      "titulo": "CafeSTIU",
+      "descripcion": "Los CafeSTIUs son un espacio diálogo e intercambio de experiencias orientado a fortalecer el uso, conocimiento y aprovechamiento de la información, herramientas y desarrollos disponibles en el Sistema de Información Territorial y Urbano. Consulta los recursos de las sesiones realizadas.",
+      "imagen": "imagenes/cafesitus.jpg",
+      "fecha": "2026-08-20",
+      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/d_LaZR2IQY-t20UgAij6Pg"
     }
   ]
 }
