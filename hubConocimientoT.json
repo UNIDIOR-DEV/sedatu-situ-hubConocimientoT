@@ -3,12 +3,12 @@
   "actualizado": "2026-06-10",
   "noticias": [
     {
-      "id": "2026-08-13-movilidad-cuidados",
-      "titulo": "Movilidad de Cuidados y Pobreza de tiempo",
-      "descripcion": "Difundir los resultados del proyecto de producción de información sobre pobreza de tiempo con enfoque de género y su relación con la movilidad del cuidado, así como abordar los contenidos de la Guía Manahuia en relación con los usos del tiempo destinados a actividades de cuidado y su incidencia en la pobreza de tiempo.",
-      "imagen": "imagenes/movilidad-cuidados.jpg",
-      "fecha": "2026-08-13",
-      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/NL4JWfq7Q-W344qVczGhMA"
+      "id": "2026-09-03-movilidad-cuidados",
+      "titulo": "Del dato al territorio: Paquetes de Información Territorial",
+      "descripcion": "Impulsar el aprovechamiento de los Paquetes de Información Territorial como una herramienta para acercar información geoespacial clara, organizada y accesible a las entidades federativas, fortaleciendo su uso en el análisis, la planeación y la toma de decisiones sobre el territorio.",
+      "imagen": "imagenes/paquetedeinformacion.jpg",
+      "fecha": "2026-09-03",
+      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/CLmpG-lHRpW2HPpwLEOh9Q"
     },
     {
       "id": "2026-08-20-valuacion-masiva",
@@ -20,8 +20,8 @@
     },
     {
       "id": "2026-08-20-valuacion-masiva",
-      "titulo": "CafeSTIU",
-      "descripcion": "Los CafeSTIUs son un espacio diálogo e intercambio de experiencias orientado a fortalecer el uso, conocimiento y aprovechamiento de la información, herramientas y desarrollos disponibles en el Sistema de Información Territorial y Urbano. Consulta los recursos de las sesiones realizadas.",
+      "titulo": "Cafesitu",
+      "descripcion": "Los Cafesitu son un espacio diálogo e intercambio de experiencias orientado a fortalecer el uso, conocimiento y aprovechamiento de la información, herramientas y desarrollos disponibles en el Sistema de Información Territorial y Urbano. Consulta los recursos de las sesiones realizadas.",
       "imagen": "imagenes/cafesitus.jpg",
       "fecha": "2026-08-20",
       "link": "https://sistemas.sedatu.gob.mx/repositorio/s/d_LaZR2IQY-t20UgAij6Pg"
