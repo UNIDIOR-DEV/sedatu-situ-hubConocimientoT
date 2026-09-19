@@ -3,12 +3,12 @@
   "actualizado": "2026-06-10",
   "noticias": [
     {
-      "id": "2026-09-03-movilidad-cuidados",
-      "titulo": "Del dato al territorio: Paquetes de Información Territorial",
-      "descripcion": "Impulsar el aprovechamiento de los Paquetes de Información Territorial como una herramienta para acercar información geoespacial clara, organizada y accesible a las entidades federativas, fortaleciendo su uso en el análisis, la planeación y la toma de decisiones sobre el territorio.",
-      "imagen": "imagenes/paquetedeinformacion.jpg",
-      "fecha": "2026-09-03",
-      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/CLmpG-lHRpW2HPpwLEOh9Q"
+      "id": "2026-08-20-Cafesitu",
+      "titulo": "Consulta todas las sesiones de Cafesitu",
+      "descripcion": "En esta sección encontrarás el histórico de todas las sesiones realizadas. Los Cafesitu son un espacio de diálogo e intercambio de experiencias orientado a fortalecer el conocimiento, uso y aprovechamiento de la información, herramientas y desarrollos disponibles en el SITU.",
+      "imagen": "imagenes/Sesiones Cafesitus.png",
+      "fecha": "2026-08-20",
+      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/d_LaZR2IQY-t20UgAij6Pg"
     },
     {
       "id": "2026-09-17-valuacion-masiva",
@@ -19,12 +19,12 @@
       "link": "https://sistemas.sedatu.gob.mx/repositorio/s/-5hfH9ywTziyCrFNxsHtLA"
     },
     {
-      "id": "2026-08-20-valuacion-masiva",
-      "titulo": "Cafesitu",
-      "descripcion": "Los Cafesitu son un espacio diálogo e intercambio de experiencias orientado a fortalecer el uso, conocimiento y aprovechamiento de la información, herramientas y desarrollos disponibles en el Sistema de Información Territorial y Urbano. Consulta los recursos de las sesiones realizadas.",
-      "imagen": "imagenes/cafesitus.jpg",
-      "fecha": "2026-08-20",
-      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/d_LaZR2IQY-t20UgAij6Pg"
+      "id": "2026-09-03-movilidad-cuidados",
+      "titulo": "Del dato al territorio: Paquetes de Información Territorial",
+      "descripcion": "Impulsar el aprovechamiento de los Paquetes de Información Territorial como una herramienta para acercar información geoespacial clara, organizada y accesible a las entidades federativas, fortaleciendo su uso en el análisis, la planeación y la toma de decisiones sobre el territorio.",
+      "imagen": "imagenes/paquetedeinformacion.jpg",
+      "fecha": "2026-09-03",
+      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/CLmpG-lHRpW2HPpwLEOh9Q"
     }
   ]
 }
