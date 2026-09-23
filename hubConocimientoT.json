@@ -19,12 +19,20 @@
       "link": "https://sistemas.sedatu.gob.mx/repositorio/s/-5hfH9ywTziyCrFNxsHtLA"
     },
     {
-      "id": "2026-09-03-movilidad-cuidados",
+      "id": "2026-09-03-Del dato al territorio",
       "titulo": "Del dato al territorio: Paquetes de Información Territorial",
       "descripcion": "Impulsar el aprovechamiento de los Paquetes de Información Territorial como una herramienta para acercar información geoespacial clara, organizada y accesible a las entidades federativas, fortaleciendo su uso en el análisis, la planeación y la toma de decisiones sobre el territorio.",
       "imagen": "imagenes/paquetedeinformacion.jpg",
       "fecha": "2026-09-03",
       "link": "https://sistemas.sedatu.gob.mx/repositorio/s/CLmpG-lHRpW2HPpwLEOh9Q"
+    },
+     {
+      "id": "2026-09-03-Foro de Dialogos",
+      "titulo": "“Foro de Diálogos UAM-SEDATU” Ciudades en Transición: Hacia un ecosistema del conocimiento sobre el fenómeno urbano y territorial en México",
+      "descripcion": "Consulta todos los detalles del Foro se desarrolló los días 9 y 10 de septiembre organizado por la UAM y la SEDATU.\nFomentando un espacio permanente de encuentro entre academia, sociedad y gobiernos para vincular la producción de conocimiento con las necesidades y decisiones sobre el territorio. Su enfoque incorpora principios de ciencia abierta y ciudadana, gobernanza anticipatoria y geoprospectiva, con una mirada multiescalar sobre los retos urbanos, territoriales y de transición socioecológica.",
+      "imagen": "imagenes/Foro de Diálogos UAM-SEDATU.png",
+      "fecha": "2026-09-22",
+      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/qWO0iTgTTEGupHxKCY7GCg"
     }
   ]
 }
