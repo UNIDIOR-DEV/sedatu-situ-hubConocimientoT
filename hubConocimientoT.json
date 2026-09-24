@@ -11,20 +11,20 @@
       "link": "https://sistemas.sedatu.gob.mx/repositorio/s/d_LaZR2IQY-t20UgAij6Pg"
     },
     {
+      "id": "2026-09-24-Geohistoria",
+      "titulo": "Geohistoria: Del mapa antiguo al mapa digital",
+      "descripcion": "Presentar la metodología y los resultados de la digitalización de información histórica para la producción de capas de información geográfica y mostrar la manera en que estos insumos facilitan la comprensión de la transformación territorial en la historia de México.",
+      "imagen": "imagenes/Geohistoria.png",
+      "fecha": "2026-09-24",
+      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/V_JZB9jmTXKXZ0hSe1hh7w"
+    },
+    {
       "id": "2026-09-17-valuacion-masiva",
       "titulo": "Recién salidas del horno: el inventario de vivienda a nivel municipal",
       "descripcion": "Presentar la metodología del indicador de inventario de vivienda que se encuentra disponible en el Sistema de Información Territorial Urbano (SITU) a nivel municipal y dar a conocer su utilidad como herramienta para dimensionar, de manera oportuna y territorializada, la vivienda nueva que se produce por los desarrolladores privados.",
       "imagen": "imagenes/Inventario de vivienda.png",
       "fecha": "2026-09-17",
       "link": "https://sistemas.sedatu.gob.mx/repositorio/s/-5hfH9ywTziyCrFNxsHtLA"
-    },
-    {
-      "id": "2026-09-03-Del dato al territorio",
-      "titulo": "Del dato al territorio: Paquetes de Información Territorial",
-      "descripcion": "Impulsar el aprovechamiento de los Paquetes de Información Territorial como una herramienta para acercar información geoespacial clara, organizada y accesible a las entidades federativas, fortaleciendo su uso en el análisis, la planeación y la toma de decisiones sobre el territorio.",
-      "imagen": "imagenes/paquetedeinformacion.jpg",
-      "fecha": "2026-09-03",
-      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/CLmpG-lHRpW2HPpwLEOh9Q"
     },
      {
       "id": "2026-09-03-Foro de Dialogos",
