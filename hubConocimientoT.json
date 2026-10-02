@@ -4,11 +4,19 @@
   "noticias": [
     {
       "id": "2026-08-20-Cafesitu",
-      "titulo": "Consulta todas las sesiones de Cafesitu",
+      "titulo": "Consulta todas las sesiones del Cafesitu",
       "descripcion": "En esta sección encontrarás el histórico de todas las sesiones realizadas. Los Cafesitu son un espacio de diálogo e intercambio de experiencias orientado a fortalecer el conocimiento, uso y aprovechamiento de la información, herramientas y desarrollos disponibles en el SITU.",
       "imagen": "imagenes/Sesiones Cafesitus.png",
       "fecha": "2026-08-20",
       "link": "https://sistemas.sedatu.gob.mx/repositorio/s/d_LaZR2IQY-t20UgAij6Pg"
+    },
+    {
+      "id": "2026-10-01-Polos de Desarrollo",
+      "titulo": "Polos de Desarrollo: de la Declaratoria al mapa",
+      "descripcion": "Presentar la metodología utilizada para generar la cartografía de los Polos de Desarrollo Económico para el Bienestar, así como sus posibles usos para el análisis y la planeación, mostrando cómo estos insumos geoespaciales pueden contribuir a orientar el desarrollo económico, social y territorial en México.",
+      "imagen": "imagenes/Polos de Desarrollo.png",
+      "fecha": "2026-10-01",
+      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/MuQYCiBfSKCrIB0jBHJdWA"
     },
     {
       "id": "2026-09-24-Geohistoria",
@@ -18,18 +26,10 @@
       "fecha": "2026-09-24",
       "link": "https://sistemas.sedatu.gob.mx/repositorio/s/V_JZB9jmTXKXZ0hSe1hh7w"
     },
-    {
-      "id": "2026-09-17-valuacion-masiva",
-      "titulo": "Recién salidas del horno: el inventario de vivienda a nivel municipal",
-      "descripcion": "Presentar la metodología del indicador de inventario de vivienda que se encuentra disponible en el Sistema de Información Territorial Urbano (SITU) a nivel municipal y dar a conocer su utilidad como herramienta para dimensionar, de manera oportuna y territorializada, la vivienda nueva que se produce por los desarrolladores privados.",
-      "imagen": "imagenes/Inventario de vivienda.png",
-      "fecha": "2026-09-17",
-      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/-5hfH9ywTziyCrFNxsHtLA"
-    },
      {
       "id": "2026-09-03-Foro de Dialogos",
       "titulo": "“Foro de Diálogos UAM-SEDATU” Ciudades en Transición: Hacia un ecosistema del conocimiento sobre el fenómeno urbano y territorial en México",
-      "descripcion": "Consulta todos los detalles del Foro se desarrolló los días 9 y 10 de septiembre organizado por la UAM y la SEDATU.\nFomentando un espacio permanente de encuentro entre academia, sociedad y gobiernos para vincular la producción de conocimiento con las necesidades y decisiones sobre el territorio. Su enfoque incorpora principios de ciencia abierta y ciudadana, gobernanza anticipatoria y geoprospectiva, con una mirada multiescalar sobre los retos urbanos, territoriales y de transición socioecológica.",
+      "descripcion": "Consulta todos los detalles del Foro que se desarrolló los días 9 y 10 de septiembre organizado por la UAM y la SEDATU.\nFomentando un espacio permanente de encuentro entre academia, sociedad y gobiernos para vincular la producción de conocimiento con las necesidades y decisiones sobre el territorio. Su enfoque incorpora principios de ciencia abierta y ciudadana, gobernanza anticipatoria y geoprospectiva, con una mirada multiescalar sobre los retos urbanos, territoriales y de transición socioecológica.",
       "imagen": "imagenes/Foro de Diálogos UAM-SEDATU.png",
       "fecha": "2026-09-22",
       "link": "https://sistemas.sedatu.gob.mx/repositorio/s/qWO0iTgTTEGupHxKCY7GCg"
