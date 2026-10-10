@@ -3,6 +3,22 @@
   "actualizado": "2026-06-10",
   "noticias": [
     {
+      "id": "2026-08-20-Prximamente",
+      "titulo": "Proximamente",
+      "descripcion": "El INAFED y la SEDATU, les invita a participar en la Capacitación “Presentación del Sistema de Información Territorial y Urbano en su versión 2.0 denominada Lidxi” INAFED-2026/002683, que se llevará a cabo el 15 de Octubre, a las 13:00 horas. Regístrate:",
+      "imagen": "imagenes/INAFED SITU2.0.png",
+      "fecha": "2026-08-20",
+      "link": "http://siglo.inafed.gob.mx/N_formate/public/"
+    },
+    {
+      "id": "2026-10-01-Cafesitu LIDXI",
+      "titulo": "SITU 2.0 “Lidxi”: El Visualizador Estratégico",
+      "descripcion": "Explorar las herramientas del Visualizador Estratégico del SITU 2.0 “Lidxi” para facilitar la consulta, comparación y análisis de información geoespacial útil para comprender el territorio y apoyar la toma de decisiones.",
+      "imagen": "imagenes/Visualizador estratégico.png",
+      "fecha": "2026-10-01",
+      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/xvqMZTcvQFafjkL2BagrSQ"
+    },
+    {
       "id": "2026-08-20-Cafesitu",
       "titulo": "Consulta todas las sesiones del Cafesitu",
       "descripcion": "En esta sección encontrarás el histórico de todas las sesiones realizadas. Los Cafesitu son un espacio de diálogo e intercambio de experiencias orientado a fortalecer el conocimiento, uso y aprovechamiento de la información, herramientas y desarrollos disponibles en el SITU.",
@@ -11,20 +27,12 @@
       "link": "https://sistemas.sedatu.gob.mx/repositorio/s/d_LaZR2IQY-t20UgAij6Pg"
     },
     {
-      "id": "2026-10-01-Polos de Desarrollo",
-      "titulo": "Polos de Desarrollo: de la Declaratoria al mapa",
-      "descripcion": "Presentar la metodología utilizada para generar la cartografía de los Polos de Desarrollo Económico para el Bienestar, así como sus posibles usos para el análisis y la planeación, mostrando cómo estos insumos geoespaciales pueden contribuir a orientar el desarrollo económico, social y territorial en México.",
-      "imagen": "imagenes/Polos de Desarrollo.png",
-      "fecha": "2026-10-01",
-      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/MuQYCiBfSKCrIB0jBHJdWA"
-    },
-    {
-      "id": "2026-09-24-Geohistoria",
-      "titulo": "Geohistoria: Del mapa antiguo al mapa digital",
-      "descripcion": "Presentar la metodología y los resultados de la digitalización de información histórica para la producción de capas de información geográfica y mostrar la manera en que estos insumos facilitan la comprensión de la transformación territorial en la historia de México.",
-      "imagen": "imagenes/Geohistoria.png",
-      "fecha": "2026-09-24",
-      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/V_JZB9jmTXKXZ0hSe1hh7w"
+      "id": "2026-09-03-CONARED",
+      "titulo": "Webinario: Presentación del SITU 2.0 Lidxi.",
+      "descripcion": "En esta sesión se presentó la nueva versión del SITU, las funcionalidades y la información de las que dispone, así como sus posibles usos para el análisis y la toma de decisiones. El webinario se realizó el jueves 8 de octubre ",
+      "imagen": "imagenes/CONARED presentación SITU SEDATU.png",
+      "fecha": "2026-09-22",
+      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/VhT79KcoSzuJvqP8AWvVaA"
     },
      {
       "id": "2026-09-03-Foro de Dialogos",
