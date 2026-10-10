@@ -1,6 +1,12 @@
 {
   "version": 1,
-  "actualizado": "2026-06-10",
+  "actualizado": "2026-10-07",
+  "seccion_superior": {
+    "titulo": "Próximamente: nuevos contenidos",
+    "descripcion": "Este espacio reunirá materiales para conocer el territorio y compartir experiencias sobre el uso de la información del SITU.",
+    "imagen": "",
+    "link": ""
+  },
   "noticias": [
     {
       "id": "2026-08-20-Cafesitu",

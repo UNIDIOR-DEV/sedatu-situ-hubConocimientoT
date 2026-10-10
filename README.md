@@ -1,101 +1,90 @@
-# SEDATU · SITU — Repositorio de Noticias
+# SEDATU · SITU — Hub de Conocimiento Territorial
 
-Este repositorio alimenta el apartado **Noticias** del landing del SITU (Sistema de Información Territorial y Urbano).
+Este repositorio contiene los datos e imágenes del Hub de Conocimiento Territorial del landing del SITU. El frontend consume `hubConocimientoT.json` mediante jsDelivr.
 
-El frontend del SITU lee el archivo `noticias.json` y las imágenes de la carpeta `imagenes/` directamente desde este repositorio a través del CDN de jsDelivr — no se requiere despliegue ni publicación manual: **basta con hacer commit en la rama `master`** para que el cambio se refleje en el sitio.
+La sección contiene un bloque superior independiente, con imagen y texto, seguido del carrusel de noticias. El título «Hub de Conocimiento Territorial» ya está definido en el landing.
 
----
+## Qué cambia en el frontend
 
-## Estructura del repositorio
+El componente actual solo lee el array `noticias`. Para mostrar el bloque superior hay que actualizar, una sola vez, `Front/components/HubConocimientoT/CarruselHubConocimientoT.js` en el repositorio [SITU](https://github.com/UNIDIOR-DEV/SITU) y publicar esa versión del frontend.
 
+Una vez instalado ese componente, los cambios de texto, imagen y enlace se realizan desde este repositorio. Un cambio en el JSON por sí solo no instala el nuevo diseño.
+
+El [parche del frontend](integracion/SITU_hub_seccion_superior.patch) contiene el cambio del componente y su documentación. Está preparado sobre la versión `6d45f57f8f32ddc9a204603057df532af40bc2be` del repositorio SITU, rama `feature/inicio-visualizacion`. Desde un clon de ese repositorio, comprueba y aplica el archivo con `git apply --check ruta/al/SITU_hub_seccion_superior.patch` y después `git apply ruta/al/SITU_hub_seccion_superior.patch`. El build y la publicación corresponden al frontend.
+
+## Estructura
+
+```text
+sedatu-situ-hubConocimientoT/
+├── hubConocimientoT.json
+├── imagenes/
+└── README.md
 ```
-sedatu-situ-noticias/
-├── noticias.json                       Manifest con los datos de cada noticia
-├── imagenes/                           Imágenes de las noticias (máx. 10)
-├── README.md                           Este archivo
-├── .gitignore
-└── .github/
-    └── PULL_REQUEST_TEMPLATE.md        Checklist para PRs
-```
 
----
+## URLs públicas
 
-## URLs públicas (CDN)
+- Manifest: https://cdn.jsdelivr.net/gh/UNIDIOR-DEV/sedatu-situ-hubConocimientoT@master/hubConocimientoT.json
+- Imágenes: https://cdn.jsdelivr.net/gh/UNIDIOR-DEV/sedatu-situ-hubConocimientoT@master/imagenes/
+- Refresco del manifest: https://purge.jsdelivr.net/gh/UNIDIOR-DEV/sedatu-situ-hubConocimientoT@master/hubConocimientoT.json
 
-El frontend consume el contenido a través de jsDelivr (CDN global con caché):
+La propagación depende de la caché del CDN. El componente también conserva una copia del contenido en el navegador durante una hora y consulta el manifest al cargar la página. El bloque superior y las noticias se guardan juntos en esa copia.
 
-- **Manifest:** `https://cdn.jsdelivr.net/gh/UNIDIOR-DEV/sedatu-situ-noticias@master/noticias.json`
-- **Imágenes:** `https://cdn.jsdelivr.net/gh/UNIDIOR-DEV/sedatu-situ-noticias@master/imagenes/<archivo>.webp`
-
-> El CDN tiene caché de aproximadamente 12 horas. Para forzar refresco inmediato durante pruebas, se puede usar `https://purge.jsdelivr.net/gh/UNIDIOR-DEV/sedatu-situ-noticias@master/noticias.json`.
-
----
-
-## Esquema de `noticias.json`
+## Esquema del manifest
 
 ```json
 {
   "version": 1,
   "actualizado": "YYYY-MM-DD",
+  "seccion_superior": {
+    "titulo": "Título del contenido destacado",
+    "descripcion": "Texto del bloque superior.",
+    "imagen": "imagenes/destacado.webp",
+    "link": ""
+  },
   "noticias": [
     {
       "id": "YYYY-MM-DD-slug-corto",
-      "titulo": "Título visible (máx. ~60 caracteres)",
-      "descripcion": "Texto descriptivo (máx. 200 caracteres).",
-      "imagen": "imagenes/nombre-archivo.webp",
+      "titulo": "Título de la noticia",
+      "descripcion": "Descripción de la noticia.",
+      "imagen": "imagenes/noticia.webp",
       "fecha": "YYYY-MM-DD",
-      "link": "https://opcional.gob.mx/..."
+      "link": ""
     }
   ]
 }
 ```
 
-### Reglas de los campos
+## Bloque superior
 
-| Campo         | Obligatorio | Reglas                                                                 |
-|---------------|-------------|------------------------------------------------------------------------|
-| `id`          | sí          | Único, formato `YYYY-MM-DD-slug-corto`                                 |
-| `titulo`      | sí          | Máx. 60 caracteres recomendado                                         |
-| `descripcion` | sí          | Máx. 200 caracteres                                                    |
-| `imagen`      | sí          | Ruta relativa dentro del repo (`imagenes/...`)                         |
-| `fecha`       | sí          | Formato ISO `YYYY-MM-DD`                                               |
-| `link`        | no          | Cadena vacía `""` si no aplica                                         |
+| Campo | Uso |
+| --- | --- |
+| `titulo` | Título del bloque. Debe contener texto para mostrarlo. |
+| `descripcion` | Descripción; admite saltos de línea. Se recomienda un máximo de 200 caracteres. |
+| `imagen` | Ruta relativa dentro de `imagenes/`. Si está vacía, se muestra un paisaje ilustrado, como referencia visual. |
+| `link` | Destino del botón «Más información». Si está vacío, el botón no aparece. |
 
-### Límite de noticias
+El bloque es independiente del carrusel: se muestra aunque `noticias` esté vacío y no cuenta dentro del límite de diez noticias. Para retirarlo, elimina `seccion_superior` o asigna `null`.
 
-El array `noticias` debe contener **un máximo de 10 entradas**. Si suben más, el frontend solo mostrará las primeras 10. Para publicar una noticia nueva cuando ya hay 10, **elimina la más antigua** antes de agregar la nueva.
+El título y la descripción incluidos en esta propuesta son provisionales. Sustitúyelos por el contenido editorial definitivo y agrega la imagen y el enlace cuando estén disponibles.
 
----
+## Noticias
 
-## Cómo agregar una noticia (desde la UI de GitHub, sin git local)
+Las noticias conservan los campos `id`, `titulo`, `descripcion`, `imagen`, `fecha` y `link`. Los identificadores deben ser únicos y la fecha debe utilizar el formato ISO `YYYY-MM-DD`. Se recomienda un título de hasta 60 caracteres y la descripción debe tener como máximo 200 caracteres.
 
-1. **Sube la imagen** a la carpeta `imagenes/`:
-   - Entra a la carpeta `imagenes/` en GitHub
-   - Botón **Add file → Upload files**
-   - Arrastra la imagen optimizada (ver reglas abajo)
-   - En el cuadro de commit, deja la opción **Create a new branch and start a pull request**
-   - Da un nombre descriptivo al branch, por ejemplo: `noticia/2026-06-15-foro-territorial`
-2. **Edita `noticias.json`** en ese mismo branch:
-   - Abre `noticias.json` → botón del lápiz (Edit this file)
-   - Agrega tu nueva entrada **al inicio** del array `noticias`
-   - Actualiza el campo `actualizado` con la fecha de hoy
-   - Si ya hay 10 noticias, elimina la más antigua del final del array
-   - Commit en el mismo branch
-3. **Crea el Pull Request** y completa el checklist
-4. Espera la revisión y el merge a `master`
-5. El cambio se refleja en el sitio en máx. ~12 h (o se purga el caché de jsDelivr para verlo al instante)
+El componente muestra las primeras diez entradas del array. En escritorio se agrupan de tres en tres; en celular se muestra una noticia por vista. Para agregar una noticia cuando ya hay diez, retira la más antigua.
 
-## Cómo retirar una noticia
+## Edición y revisión
 
-1. Edita `noticias.json` y elimina el bloque correspondiente del array
-2. (Opcional) Borra el archivo de imagen de la carpeta `imagenes/` para mantener el repo limpio
-3. Actualiza el campo `actualizado`
-4. Commit en un branch y PR como arriba
+1. Crea una rama desde `master`.
+2. Sube la imagen a `imagenes/` cuando corresponda.
+3. Edita `hubConocimientoT.json` y actualiza `actualizado`.
+4. Comprueba que el JSON sea válido, que las rutas de imágenes existan y que los enlaces sean correctos.
+5. Crea un Pull Request para revisión editorial y técnica.
+6. Después de la revisión, integra el cambio a `master`.
 
+Los nombres actuales son `sedatu-situ-hubConocimientoT` y `hubConocimientoT.json`; el componente ya utiliza estas rutas.
 
----
+## Contacto
 
-## ¿A quién contactar?
-
-- Problemas en el sitio: equipo de desarrollo SITU
-- Aprobación editorial de noticias: jefatura de proyecto SITU
+- Problemas en el sitio: equipo de desarrollo SITU.
+- Aprobación editorial: jefatura de proyecto SITU.
