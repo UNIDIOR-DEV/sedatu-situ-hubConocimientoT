@@ -2,13 +2,21 @@
   "version": 1,
   "actualizado": "2026-06-10",
   "noticias": [
-    {
+      {
       "id": "2026-08-20-Prximamente",
-      "titulo": "Proximamente",
-      "descripcion": "El INAFED y la SEDATU, les invita a participar en la Capacitación “Presentación del Sistema de Información Territorial y Urbano en su versión 2.0 denominada Lidxi” INAFED-2026/002683, que se llevará a cabo el 15 de Octubre, a las 13:00 horas. Regístrate:",
-      "imagen": "imagenes/INAFED SITU2.0.png",
+      "titulo": "Próximamente",
+      "descripcion": "Acompáñanos a explorar la distribución de la población hablante de lenguas indígenas en los municipios del territorio mexicano, a través de los resultados de la Encuesta Intercensal 2025 de INEGI.",
+      "imagen": "imagenes/Mapa de lenguas indígenas.png",
+      "fecha": "2026-10-19",
+      "link": "https://meetings-sedatu.webex.com/meetings-sedatu/j.php?MTID=m6cbf69a86b690bcdb13f45166e9e0da0"
+    },
+     {
+      "id": "2026-08-20-Cafesitu",
+      "titulo": "Consulta todas las sesiones del Cafesitu",
+      "descripcion": "En esta sección encontrarás el histórico de todas las sesiones realizadas. Los Cafesitu son un espacio de diálogo e intercambio de experiencias orientado a fortalecer el conocimiento, uso y aprovechamiento de la información, herramientas y desarrollos disponibles en el SITU.",
+      "imagen": "imagenes/Sesiones Cafesitus.png",
       "fecha": "2026-08-20",
-      "link": "http://siglo.inafed.gob.mx/N_formate/public/index.php?curso=2683"
+      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/d_LaZR2IQY-t20UgAij6Pg"
     },
     {
       "id": "2026-10-01-Cafesitu LIDXI",
@@ -18,13 +26,13 @@
       "fecha": "2026-10-01",
       "link": "https://sistemas.sedatu.gob.mx/repositorio/s/xvqMZTcvQFafjkL2BagrSQ"
     },
-    {
-      "id": "2026-08-20-Cafesitu",
-      "titulo": "Consulta todas las sesiones del Cafesitu",
-      "descripcion": "En esta sección encontrarás el histórico de todas las sesiones realizadas. Los Cafesitu son un espacio de diálogo e intercambio de experiencias orientado a fortalecer el conocimiento, uso y aprovechamiento de la información, herramientas y desarrollos disponibles en el SITU.",
-      "imagen": "imagenes/Sesiones Cafesitus.png",
+     {
+      "id": "2026-08-20-INAFED",
+      "titulo": "Sesión INAFED Diálogos Virtuales: “Sistema de Información Territorial y Urbano (SITU)”",
+      "descripcion": "El INAFED y la SEDATU, les invita a participar en la Capacitación “Presentación del Sistema de Información Territorial y Urbano en su versión 2.0 denominada Lidxi” INAFED-2026/002683, que se llevará a cabo el 15 de Octubre, a las 13:00 horas. Regístrate:",
+      "imagen": "imagenes/INAFED SITU2.0.png",
       "fecha": "2026-08-20",
-      "link": "https://sistemas.sedatu.gob.mx/repositorio/s/d_LaZR2IQY-t20UgAij6Pg"
+      "link": "http://siglo.inafed.gob.mx/N_formate/public/index.php?curso=2683"
     },
     {
       "id": "2026-09-03-CONARED",
