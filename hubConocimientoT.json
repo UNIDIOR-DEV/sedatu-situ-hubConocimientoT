@@ -2,7 +2,7 @@
   "version": 1,
   "actualizado": "2026-06-10",
   "noticias": [
-      {
+   {
       "id": "2026-08-20-Prximamente",
       "titulo": "Próximamente",
       "descripcion": "Realiza tu registro para la sesión INAFED-2026/002693 Presentación de Resultados del Desafío de Mapeo Colaborativo, una iniciativa de OpenStreamMap y la SEDATU, con la que se busca fortalecer capacidades municipales para la generación de cartografía colaborativa y el uso de datos abiertos. Viernes 30 de octubre. 11:00",
@@ -18,12 +18,14 @@
       "fecha": "2026-08-20",
       "link": "https://sistemas.sedatu.gob.mx/repositorio/s/d_LaZR2IQY-t20UgAij6Pg"
     },
+    {
     "id": "2026-08-20-Lenguas",
       "titulo": "Voces del territorio: Mapa de lenguas indígenas",
       "descripcion": "Explorar la distribución de la población hablante de lenguas indígenas en los municipios del territorio mexicano, a través de los resultados de la Encuesta Intercensal 2025 de INEGI.",
       "imagen": "imagenes/Mapa de lenguas indígenas.png",
       "fecha": "2026-10-19",
       "link": "https://sistemas.sedatu.gob.mx/repositorio/s/D-39qTrmQ7-a4TrHU2XQAw"
+    },
     {
       "id": "2026-10-01-Cafesitu LIDXI",
       "titulo": "SITU 2.0 “Lidxi”: El Visualizador Estratégico",
