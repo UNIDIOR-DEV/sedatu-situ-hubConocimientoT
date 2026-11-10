@@ -5,7 +5,15 @@
    {
       "id": "2026-08-20-Prximamente",
       "titulo": "Próximamente",
-      "descripcion": "Realiza tu registro para la sesión INAFED-2026/002693 Presentación de Resultados del Desafío de Mapeo Colaborativo, una iniciativa de OpenStreetMap y la SEDATU, con la que se busca fortalecer capacidades municipales para la generación de cartografía colaborativa y el uso de datos abiertos. Viernes 30 de octubre. 11:00",
+      "descripcion": "Conestate a la sesión que tiene por objetivo es eficientar el procesamiento de los datos de la Encuesta Intercensal 2025 mediante la concentración de preguntas territoriales en un solo ciclo de trabajo, con prioridad para las áreas del Ramo 15 y publicación de los resultados en el SITU. Jueves 10 de noviembre de 2026, 11:00",
+      "imagen": "imagenes/Óbnibus 2.png",
+      "fecha": "2026-11-10",
+      "link": "https://meetings-sedatu.webex.com/meetings-sedatu/j.php?MTID=m46e0287af51ac4eaaa570c4065eef069"
+    },
+    {
+      "id": "2026-08-20-Prximamente",
+      "titulo": "Presentación de resultados del desafío de mapeo colaborativo",
+      "descripcion": "Sesión con INAFED realizada el viernes 30 de octubre. Presentación de Resultados del Desafío de Mapeo Colaborativo, una iniciativa de OpenStreetMap y la SEDATU, que tuvo por fin el fortalecimiento capacidades municipales para la generación de cartografía colaborativa y el uso de datos abiertos",
       "imagen": "imagenes/Resultados OSM.png",
       "fecha": "2026-10-19",
       "link": "http://siglo.inafed.gob.mx/N_formate/public/index.php?curso=2693"
