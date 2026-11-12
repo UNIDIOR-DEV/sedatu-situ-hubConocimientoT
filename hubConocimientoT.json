@@ -10,14 +10,6 @@
       "fecha": "2026-11-10",
       "link": "https://meetings-sedatu.webex.com/meetings-sedatu/j.php?MTID=m46e0287af51ac4eaaa570c4065eef069"
     },
-    {
-      "id": "2026-08-20-Prximamente",
-      "titulo": "Presentación de resultados del desafío de mapeo colaborativo",
-      "descripcion": "Sesión con INAFED realizada el viernes 30 de octubre. Presentación de Resultados del Desafío de Mapeo Colaborativo, una iniciativa de OpenStreetMap y la SEDATU, que tuvo por fin el fortalecimiento capacidades municipales para la generación de cartografía colaborativa y el uso de datos abiertos",
-      "imagen": "imagenes/Resultados OSM.png",
-      "fecha": "2026-10-19",
-      "link": "http://siglo.inafed.gob.mx/N_formate/public/index.php?curso=2693"
-    },
      {
       "id": "2026-08-20-Cafesitu",
       "titulo": "Consulta todas las sesiones del Cafesitu",
@@ -48,7 +40,7 @@
       "descripcion": "El INAFED y la SEDATU, les invita a participar en la Capacitación “Presentación del Sistema de Información Territorial y Urbano en su versión 2.0 denominada Lidxi” INAFED-2026/002683, que se llevará a cabo el 15 de Octubre, a las 13:00 horas. Regístrate:",
       "imagen": "imagenes/INAFED SITU2.0.png",
       "fecha": "2026-08-20",
-      "link": "http://siglo.inafed.gob.mx/N_formate/public/index.php?curso=2683"
+      "link": "https://www.facebook.com/share/v/1K4Q7PWK2m/"
     },
     {
       "id": "2026-09-03-CONARED",
@@ -65,6 +57,14 @@
       "imagen": "imagenes/Foro de Diálogos UAM-SEDATU.png",
       "fecha": "2026-09-22",
       "link": "https://sistemas.sedatu.gob.mx/repositorio/s/qWO0iTgTTEGupHxKCY7GCg"
-    }
+    },
+     {
+      "id": "2026-08-20-INAFED-OSM",
+      "titulo": "Presentación de resultados del desafío de mapeo colaborativo",
+      "descripcion": "Sesión con INAFED realizada el viernes 30 de octubre. Presentación de Resultados del Desafío de Mapeo Colaborativo, una iniciativa de OpenStreetMap y la SEDATU, que tuvo por fin el fortalecimiento capacidades municipales para la generación de cartografía colaborativa y el uso de datos abiertos",
+      "imagen": "imagenes/Resultados OSM.png",
+      "fecha": "2026-10-19",
+      "link": "http://siglo.inafed.gob.mx/N_formate/public/index.php?curso=2693"
+    },
   ]
 }
