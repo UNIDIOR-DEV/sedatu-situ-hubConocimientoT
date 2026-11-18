@@ -5,10 +5,10 @@
    {
       "id": "2026-08-20-Prximamente",
       "titulo": "Próximamente",
-      "descripcion": "Conéctate a la sesión que tiene por objetivo identificar las preguntas y necesidades de información de las personas usuarias con base en la Encuesta Intercensal 2025 de INEGI, para su posterior procesamiento y publicación de resultados en el SITU. Jueves 10 de noviembre de 2026, 11:00",
-      "imagen": "imagenes/Óbnibus 2.png",
-      "fecha": "2026-11-10",
-      "link": "https://meetings-sedatu.webex.com/meetings-sedatu/j.php?MTID=m46e0287af51ac4eaaa570c4065eef069"
+      "descripcion": "Consulta los eventos del SITU en el marco de la Semana de Concienciación Geográfica 2026, del 16 al 20 de noviembre",
+      "imagen": "imagenes/Concienciación.png",
+      "fecha": "2026-16-11",
+      "link": "https://www.instagram.com/p/DfisaXnGBaZ/?avpt=MWVpM2h1a3g2MjBtOA=="
     },
      {
       "id": "2026-08-20-Cafesitu",
@@ -17,6 +17,14 @@
       "imagen": "imagenes/Sesiones Cafesitus.png",
       "fecha": "2026-08-20",
       "link": "https://sistemas.sedatu.gob.mx/repositorio/s/d_LaZR2IQY-t20UgAij6Pg"
+    },
+     {
+      "id": "2026-08-20-Ómnibus",
+      "titulo": "Ómnibus de Preguntas territoriales",
+      "descripcion": "Identificar las preguntas y necesidades de información de las personas usuarias con base en la Encuesta Intercensal 2025 de INEGI, para su posterior procesamiento y publicación de resultados en el SITU.",
+      "imagen": "imagenes/Óbnibus 2.png",
+      "fecha": "2026-11-10",
+      "link": "https://meetings-sedatu.webex.com/meetings-sedatu/j.php?MTID=m46e0287af51ac4eaaa570c4065eef069"
     },
     {
     "id": "2026-08-20-Lenguas",
