@@ -1,0 +1,396 @@
+diff --git a/Front/components/HubConocimientoT/CarruselHubConocimientoT.js b/Front/components/HubConocimientoT/CarruselHubConocimientoT.js
+--- a/Front/components/HubConocimientoT/CarruselHubConocimientoT.js
++++ b/Front/components/HubConocimientoT/CarruselHubConocimientoT.js
+@@ -3,12 +3,35 @@
+ 
+ const CDN_BASE = 'https://cdn.jsdelivr.net/gh/UNIDIOR-DEV/sedatu-situ-hubConocimientoT@master';
+ const JSON_URL = `${CDN_BASE}/hubConocimientoT.json`;
+-const CACHE_KEY = 'situ_hubconocimientot_cache_v1';
++const CACHE_KEY = 'situ_hubconocimientot_cache_v2';
+ const CACHE_TTL_MS = 60 * 60 * 1000;
+ const MAX_ITEMS = 10;
+ 
++export function normalizarManifest(json) {
++  const noticias = Array.isArray(json && json.noticias)
++    ? json.noticias.slice(0, MAX_ITEMS)
++    : [];
++  const superior = json && json.seccion_superior;
++  const seccionSuperior =
++    superior &&
++    typeof superior === 'object' &&
++    !Array.isArray(superior) &&
++    typeof superior.titulo === 'string' &&
++    superior.titulo.trim()
++      ? {
++          titulo: superior.titulo.trim(),
++          descripcion: typeof superior.descripcion === 'string' ? superior.descripcion : '',
++          imagen: typeof superior.imagen === 'string' ? superior.imagen : '',
++          link: typeof superior.link === 'string' ? superior.link : '',
++        }
++      : null;
++
++  return { noticias, seccion_superior: seccionSuperior };
++}
++
+ export default function CarruselHubConocimientoT() {
+   const [items, setItems] = useState([]);
++  const [seccionSuperior, setSeccionSuperior] = useState(null);
+   const [estado, setEstado] = useState('loading');
+ 
+   useEffect(() => {
+@@ -19,8 +42,13 @@
+       const cached = typeof window !== 'undefined' && window.localStorage.getItem(CACHE_KEY);
+       if (cached) {
+         const { data, timestamp } = JSON.parse(cached);
+-        if (Date.now() - timestamp < CACHE_TTL_MS && Array.isArray(data) && data.length > 0) {
+-          setItems(data.slice(0, MAX_ITEMS));
++        const contenido = normalizarManifest(data);
++        if (
++          Date.now() - timestamp < CACHE_TTL_MS &&
++          (contenido.noticias.length > 0 || contenido.seccion_superior)
++        ) {
++          setItems(contenido.noticias);
++          setSeccionSuperior(contenido.seccion_superior);
+           setEstado('ok');
+           hasCachedData = true;
+         }
+@@ -33,15 +61,14 @@
+       .then((r) => (r.ok ? r.json() : Promise.reject(new Error('HTTP ' + r.status))))
+       .then((json) => {
+         if (cancelled) return;
+-        const arr = Array.isArray(json && json.noticias)
+-          ? json.noticias.slice(0, MAX_ITEMS)
+-          : [];
+-        setItems(arr);
+-        setEstado(arr.length > 0 ? 'ok' : 'vacio');
++        const contenido = normalizarManifest(json);
++        setItems(contenido.noticias);
++        setSeccionSuperior(contenido.seccion_superior);
++        setEstado(contenido.noticias.length > 0 || contenido.seccion_superior ? 'ok' : 'vacio');
+         try {
+           window.localStorage.setItem(
+             CACHE_KEY,
+-            JSON.stringify({ data: arr, timestamp: Date.now() })
++            JSON.stringify({ data: contenido, timestamp: Date.now() })
+           );
+         } catch (e) {
+           // cuota llena u otro problema: ignorar
+@@ -57,11 +84,11 @@
+     };
+   }, []);
+ 
+-  if (estado === 'loading' || estado === 'error' || estado === 'vacio' || items.length === 0) {
++  if (estado === 'loading' || estado === 'error' || estado === 'vacio' || (items.length === 0 && !seccionSuperior)) {
+     return null;
+   }
+ 
+-  const imgUrl = (rel) => `${CDN_BASE}/${rel}`;
++  const imgUrl = (rel) => `${CDN_BASE}/${rel.split('/').map(encodeURIComponent).join('/')}`;
+ 
+   const renderCard = (n) => (
+     <div className="card" key={n.id}>
+@@ -90,47 +117,124 @@
+ 
+   return (
+     <>
+-      <Carousel
+-        id="carouselHubConocimientoTDesktop"
+-        indicators={false}
+-        style={{ paddingTop: '25px', paddingBottom: '40px' }}
+-        className="d-none d-md-table"
+-        prevIcon={
+-          <span
+-            aria-hidden="true"
+-            className="carousel-control-prev-icon"
+-            style={{ filter: 'invert(1) grayscale(100)' }}
+-          />
+-        }
+-        nextIcon={
+-          <span
+-            aria-hidden="true"
+-            className="carousel-control-next-icon"
+-            style={{ filter: 'invert(1) grayscale(100)' }}
+-          />
+-        }
+-      >
+-        {grupos.map((grupo, idx) => (
+-          <Carousel.Item key={idx}>
+-            <div className="cards-wrapper">{grupo.map(renderCard)}</div>
+-          </Carousel.Item>
+-        ))}
+-      </Carousel>
+-
+-      <Carousel
+-        id="carouselHubConocimientoTMobile"
+-        indicators={false}
+-        style={{ paddingTop: '25px', paddingBottom: '40px' }}
+-        className="d-md-none"
+-      >
+-        {items.map((n) => (
+-          <Carousel.Item key={n.id}>
+-            <div className="cards-wrapper">{renderCard(n)}</div>
+-          </Carousel.Item>
+-        ))}
+-      </Carousel>
++      {seccionSuperior ? (
++        <section id="hubConocimientoTDestacado" aria-label="Contenido destacado">
++          <div className="hub-destacado-imagen">
++            {seccionSuperior.imagen ? (
++              <img src={imgUrl(seccionSuperior.imagen)} alt={seccionSuperior.titulo} />
++            ) : (
++              <svg viewBox="0 0 280 330" role="img" aria-label="Paisaje ilustrado">
++                <rect width="280" height="330" fill="#e0f6ff" />
++                <path
++                  d="M92 68a30 30 0 0 1 58-6 24 24 0 0 1 34 23H87a18 18 0 0 1 5-17Z"
++                  fill="#fff"
++                />
++                <path d="M0 225c65-7 129 38 280 16v89H0Z" fill="#b9ed69" />
++                <path d="M0 288c102-57 155-20 280-22v64H0Z" fill="#83b500" />
++              </svg>
++            )}
++          </div>
++          <div className="hub-destacado-contenido text-center">
++            <h3>{seccionSuperior.titulo}</h3>
++            {seccionSuperior.descripcion ? <p>{seccionSuperior.descripcion}</p> : null}
++            {seccionSuperior.link ? (
++              <a
++                href={seccionSuperior.link}
++                target="_blank"
++                rel="noopener noreferrer"
++                className="btn btn-situ"
++              >
++                Más información
++              </a>
++            ) : null}
++          </div>
++        </section>
++      ) : null}
++
++      {items.length > 0 ? (
++        <>
++          <Carousel
++            id="carouselHubConocimientoTDesktop"
++            indicators={false}
++            style={{ paddingTop: '25px', paddingBottom: '40px' }}
++            className="d-none d-md-table"
++            prevIcon={
++              <span
++                aria-hidden="true"
++                className="carousel-control-prev-icon"
++                style={{ filter: 'invert(1) grayscale(100)' }}
++              />
++            }
++            nextIcon={
++              <span
++                aria-hidden="true"
++                className="carousel-control-next-icon"
++                style={{ filter: 'invert(1) grayscale(100)' }}
++              />
++            }
++          >
++            {grupos.map((grupo, idx) => (
++              <Carousel.Item key={idx}>
++                <div className="cards-wrapper">{grupo.map(renderCard)}</div>
++              </Carousel.Item>
++            ))}
++          </Carousel>
++
++          <Carousel
++            id="carouselHubConocimientoTMobile"
++            indicators={false}
++            style={{ paddingTop: '25px', paddingBottom: '40px' }}
++            className="d-md-none"
++          >
++            {items.map((n) => (
++              <Carousel.Item key={n.id}>
++                <div className="cards-wrapper">{renderCard(n)}</div>
++              </Carousel.Item>
++            ))}
++          </Carousel>
++        </>
++      ) : null}
+ 
+       <style jsx global>{`
++        #hubConocimientoTDestacado {
++          display: flex;
++          align-items: center;
++          gap: 24px;
++          width: 80%;
++          margin: 24px auto 0;
++        }
++        #hubConocimientoTDestacado .hub-destacado-imagen {
++          flex: 0 0 33.333%;
++          min-width: 0;
++        }
++        #hubConocimientoTDestacado .hub-destacado-imagen img,
++        #hubConocimientoTDestacado .hub-destacado-imagen svg {
++          display: block;
++          width: 100%;
++          height: auto;
++        }
++        #hubConocimientoTDestacado .hub-destacado-contenido {
++          flex: 1;
++          min-width: 0;
++          overflow-wrap: anywhere;
++        }
++        #hubConocimientoTDestacado h3 {
++          margin-top: 0;
++        }
++        #hubConocimientoTDestacado p {
++          white-space: pre-line;
++          margin-bottom: 20px;
++        }
++        @media (max-width: 767px) {
++          #hubConocimientoTDestacado {
++            flex-direction: column;
++            width: 90%;
++          }
++          #hubConocimientoTDestacado .hub-destacado-imagen {
++            width: 100%;
++            max-width: 280px;
++          }
++        }
+         #carouselHubConocimientoTDesktop .cards-wrapper {
+           display: flex;
+           padding-left: 10%;
+diff --git a/Front/components/HubConocimientoT/README.md b/Front/components/HubConocimientoT/README.md
+--- a/Front/components/HubConocimientoT/README.md
++++ b/Front/components/HubConocimientoT/README.md
+@@ -1,104 +1,55 @@
+ # Hub de Conocimiento Territorial — SITU
+ 
+-Sección del landing del SITU que muestra un carrusel de cards (imagen + texto) alimentado
+-desde un repositorio público de GitHub a través del CDN jsDelivr, sin necesidad de redeploy
+-del frontend.
++El componente `CarruselHubConocimientoT.js` muestra un bloque superior independiente y, debajo, el carrusel de noticias del landing.
+ 
+-- **Componente:** `CarruselHubConocimientoT.js` (este mismo folder)
+-- **Repositorio de contenido:** https://github.com/UNIDIOR-DEV/sedatu-situ-hubConocimientoT
+-- **URL del JSON consumido:** https://cdn.jsdelivr.net/gh/UNIDIOR-DEV/sedatu-situ-hubConocimientoT@master/hubConocimientoT.json
++La implementación utiliza React y react-bootstrap, ya incluidos en el proyecto. No agrega dependencias.
+ 
+----
++## Integración
+ 
+-## Instalación
++Reemplaza este archivo:
+ 
+-No requiere `npm install`: reutiliza `react` y `react-bootstrap`, que ya están en el proyecto.
+-Solo hay que dejar el componente en su carpeta y enchufarlo en `index.js`.
+-
+-### 1. Ubicar el componente
+-
+-```
++```text
+ Front/components/HubConocimientoT/CarruselHubConocimientoT.js
+ ```
+ 
+-### 2. Importarlo en `Front/pages/index.js`
++No es necesario modificar `Front/pages/index.js`: ya contiene el título «Hub de Conocimiento Territorial», el import y la llamada al componente.
+ 
+-```js
+-import CarruselHubConocimientoT from '/components/HubConocimientoT/CarruselHubConocimientoT';
+-```
++Después de aplicar el cambio, ejecuta el build habitual del frontend y publica esa versión. Esta instalación inicial sí requiere actualizar el frontend; las ediciones posteriores del contenido se realizan en el repositorio de datos.
+ 
+-### 3. Renderizarlo después de Documentos técnicos
++## Fuente de contenido
+ 
+-En este proyecto ya está insertado en **`Front/pages/index.js`, líneas 403-410**
+-(el `import` está en la línea 8), justo después del carrusel de "Documentos técnicos":
++- Repositorio: https://github.com/UNIDIOR-DEV/sedatu-situ-hubConocimientoT
++- Manifest: https://cdn.jsdelivr.net/gh/UNIDIOR-DEV/sedatu-situ-hubConocimientoT@master/hubConocimientoT.json
+ 
+-```jsx
+-<div className="container-fluid">
+-  <div className="row" style={{ paddingTop: "40px" }}>
+-    <div className="col-12">
+-      <h2 className="text-center">Hub de Conocimiento Territorial</h2>
+-    </div>
+-  </div>
+-</div>
+-<CarruselHubConocimientoT />
+-```
+-
+-Build normal: `npm run build` y luego `npm start`.
+-
+----
+-
+-## Cómo funciona el CDN (jsDelivr)
+-
+-jsDelivr sirve **archivos individuales** de un repo público de GitHub. **No se configura nada**:
+-con que el repo sea público, la URL funciona automáticamente.
+-
+-> jsDelivr solo sirve archivos, **no carpetas**. Por eso abrir la raíz da "invalid URL":
+->
+-> - `https://cdn.jsdelivr.net/gh/UNIDIOR-DEV/sedatu-situ-hubConocimientoT@master` (raíz → inválida)
+-> - `https://cdn.jsdelivr.net/gh/UNIDIOR-DEV/sedatu-situ-hubConocimientoT@master/hubConocimientoT.json` (archivo → OK)
+-
+-El componente ya apunta al archivo correcto. Si cambias de repo o rama, edita la constante
+-`CDN_BASE` al inicio de `CarruselHubConocimientoT.js`.
+-
+----
+-
+-## Estructura esperada del repo de contenido
+-
+-El repositorio debe contener:
+-
+-```
+-hubConocimientoT.json     ← lista de elementos (llave raíz "items")
+-imagenes/                 ← imágenes referenciadas en el JSON
+-```
+-
+-Formato de `hubConocimientoT.json`:
++El esquema utiliza la llave raíz `noticias`, no `items`. Además, admite el objeto opcional `seccion_superior`:
+ 
+ ```json
+ {
+-  "items": [
+-    {
+-      "id": 1,
+-      "titulo": "Título del elemento",
+-      "descripcion": "Texto descriptivo",
+-      "imagen": "imagenes/ejemplo.jpg",
+-      "link": "https://..."
+-    }
+-  ]
++  "version": 1,
++  "actualizado": "YYYY-MM-DD",
++  "seccion_superior": {
++    "titulo": "Título del bloque superior",
++    "descripcion": "Descripción del contenido destacado.",
++    "imagen": "imagenes/destacado.webp",
++    "link": ""
++  },
++  "noticias": []
+ }
+ ```
+ 
+----
++## Comportamiento
+ 
+-## Publicar / editar contenido
++- El título del bloque superior debe contener texto para mostrarlo.
++- Si no hay imagen, se utiliza un paisaje vectorial de referencia.
++- El botón «Más información» se muestra cuando se proporciona un enlace.
++- El bloque superior se muestra incluso si no hay noticias.
++- Los manifiestos anteriores, sin `seccion_superior`, siguen mostrando el carrusel.
++- El carrusel mantiene el máximo de diez noticias, agrupadas de tres en escritorio y una en celular.
++- En celular, la imagen del bloque superior se coloca encima del texto.
++- Se conserva el contenido completo en la caché `situ_hubconocimientot_cache_v2` durante una hora.
++- Si falla la consulta, se utiliza la copia vigente del navegador. Sin contenido disponible, el componente no se muestra.
++- Las rutas de imágenes se codifican para admitir espacios y acentos.
+ 
+-Todo se hace en el repo de contenido (no se toca el frontend):
++## Validación
+ 
+-1. Sube las imágenes a la carpeta `imagenes/` del repo.
+-2. Edita `hubConocimientoT.json` (máximo 10 elementos, cada uno con `id`, `titulo`,
+-   `descripcion`, `imagen`, `link`).
+-3. Haz commit. Los cambios se propagan por la caché de jsDelivr (~12 h) o al instante
+-   purgando la caché:
+-   `https://purge.jsdelivr.net/gh/UNIDIOR-DEV/sedatu-situ-hubConocimientoT@master/hubConocimientoT.json`
+-
+-Si el JSON está vacío o falla la carga, la sección simplemente no se muestra
+-(no rompe el landing).
++Comprueba la carga con un manifest que contenga ambas partes, con solo noticias y con solo el bloque superior. Revisa también la navegación del carrusel, la presentación en celular y la recuperación de la caché si falla la conexión.
